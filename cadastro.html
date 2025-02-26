@@ -31,15 +31,19 @@
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
 
-
-
-
                     <div class="input-container">
                         <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
                         <label class="input-label" for="email">Email</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
-                    
+
+                    <div class="input-container">
+                        <input name="numero" id="numero" class="input" type="text" placeholder="Numero de telefone" pattern="(\(\d{2}\)|\d{2})?\d{4,5}-?\d{4}" title="Exemplos válidos: 83991313434, (83)991313434, (83)99131-3434, 8399131-3434" required>
+                        <label class="input-label" for="numero">Numero de telefone</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+
                     <div class="input-container">
                         <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." data-tipo="senha" required>
                         <label class="input-label" for="senha">Senha</label>
@@ -79,6 +83,14 @@
                     <div class="input-container">
                         <input name="estado" id="estado" class="input" type="text" placeholder="Estado" data-tipo="estado" required>
                         <label class="input-label" for="estado">Estado</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <legend class="formulario__legenda">Redes sociais</legend>
+
+                    <div class="input-container">
+                        <input name="instagram" id="instagram" class="input" type="text" placeholder="@nomedousuario" pattern="@[a-zA-Z0-9_]+" title="Exemplo: @nomedousuario" required>
+                        <label class="input-label" for="instagram">Instagram</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>
